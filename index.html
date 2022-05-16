@@ -1,19 +1,45 @@
 <html> 
  <head> 
- 	<title> This should show </title>
-	 <link href=stylesheet.css rel=stylesheet type=text/css>
-	</head>
-	<body> 
-	<div>Enter API Key: <input type="text" id="user-key" name="user-key" placeholder="API KEY">  </div>
-	<div id="button">Enter Summoner Name: <input type="text" id="user-name" name="user-name" placeholder="SUMMONER NAME"> <button type="submit"> Submit </button> </div>
-	
-	
-	<div> </div>
-	<div> </div>
-	<div> </div>
-	<div> </div>
 
-	
+	<httpProtocol>
+		<customHeaders>
+		<add name="Access-Control-Allow-Origin" value="*" />
+		<add name="Access-Control-Allow-Headers" value="Content-Type" />
+		<add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />
+		<add name="Access-Control-Allow-Credentials" value="true" />
+		</customHeaders>  
+		</httpProtocol>
+ 	<title> League of Legends - Match Card </title>
+	<link href=stylesheet.css rel=stylesheet type=text/css />
+ </head>
+	<body> 
+
+		<div class="wrapper"> 
+			 <h1 class="banner-plate"> League - Most Recent Match </h1>				
+				<div class="summoner-plate">
+					Enter Summoner Name: 
+					<input type="text" id="user-name" name="user-name" placeholder="SUMMONER NAME"> 
+
+				</div>
+					
+				<div class="api-plate">
+					Enter API Key: 
+					<input type="text" id="user-key" name="user-key" placeholder="API KEY">  
+					<button id="button" type="submit"> 
+						Submit </button> 
+				</div>
+
+
+				<div class="match-info-container" > 
+					<div class="match-card">
+						<!-- <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg" height="580" width="900"> -->
+					</div>
+
+
+
+				</div>
+				
+		</div>
 	
 	<!-- <div class="drip">Drip</div> -->
  </body>
